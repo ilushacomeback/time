@@ -3,6 +3,8 @@ function getTime(seconds) {
         return `Просил же меньше 359999 вводить`
     } else if (!seconds) {
         return 'И чего не ввел?'
+    } else if (seconds < 0) {
+        return 'Дурачек?'
     }
 
   const padStart = (num) => {
